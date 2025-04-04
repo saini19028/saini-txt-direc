@@ -146,7 +146,7 @@ async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
         "🎉Congrats! You are using 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎:\n┣\n"
         "┣⪼01. Send /start - To Check Bot \n┣\n"
-        "┣⪼02. Send /saini_sahab19 - for extract txt file\n┣\n"
+        "┣⪼02. Send /saini - for extract txt file\n┣\n"
         "┣⪼03. Send /cp - for stream txt file\n┣\n"
         "┣⪼04. Send /y2t - YouTube to .txt Convert\n┣\n"
         "┣⪼05. Send /logs - To see Bot Working Logs\n┣\n"
@@ -361,7 +361,7 @@ async def run_bot(bot: Client, m: Message):
     await m.reply_document(document=processed_txt_file, caption="Here is your processed txt file.")
     os.remove(processed_txt_file)   
     
-@bot.on_message(filters.command(["saini_sahab19"]) )
+@bot.on_message(filters.command(["saini"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"<pre><code>🔹Hi I am Poweful TXT Downloader📥 Bot.\n🔹Send me the txt file and wait.</code></pre>")
     input: Message = await bot.listen(editable.chat.id)
@@ -705,12 +705,13 @@ async def txt_handler(bot: Client, m: Message):
                        f"▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
                        f"🔹𝙵𝚊𝚒𝚕𝚎𝚍 𝙻𝚒𝚗𝚔𝚜 » {failed_count}\n"
                        f"✅𝚂𝚝𝚊𝚝𝚞𝚜 » 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍`")
-    await m.reply_text("<pre><code>Downloaded By ⌈✨『<b> @SAINI_SAHAB19 </b>』✨⌋</code></pre>")
+    await m.reply_text("𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ <b> @SAINI_SAHAB19 </b>")
+    await m.reply_text("『😏𝗥𝗲𝗮𝗰𝘁𝗶𝗼𝗻 𝗞𝗼𝗻 𝗗𝗲𝗴𝗮😏』")
 
 
 @bot.on_message(filters.command(["cp"]) )
 async def txt_handler(bot: Client, m: Message):
-    editable = await m.reply_text(f"<pre><code>🔹Hi I am Poweful CP stream📥 Bot.\n🔹Send me the TXT file and wait.</code></pre>")
+    editable = await m.reply_text(f"🔹Hi I am Poweful CP stream📥 Bot.\n🔹Send me the TXT file and wait.</code></pre>")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
