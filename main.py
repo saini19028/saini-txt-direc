@@ -262,7 +262,7 @@ async def send_logs(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("**<b> रुक गया मेरे मालिक </b> **", True)
+    await m.reply_text("<b> रुक गया मेरे मालिक </b>", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @bot.on_message(filters.command(["y2t"]))
@@ -538,12 +538,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » {name1} [{res}] [{CR}] .mp4\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
-                cc1 = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n📕𝐓𝐢𝐭𝐥𝐞 » {name1} [{CR}] .pdf\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
-                cczip = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n📁𝐓𝐢𝐭𝐥𝐞 » {name1} [{CR}] .zip\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'  
-                ccimg = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n🖼️𝐓𝐢𝐭𝐥𝐞 » {name1} [{CR}] .jpg\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
-                cccpvod = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » {name1} [{CR}] .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
-                ccyt = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » {name1} [{CR}] .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » {CR}\n'
+                cc = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n𝗩𝗶𝗱𝗲𝗼 𝗧𝗶𝘁𝗹𝗲 ➤ {name1} [{res}] {CR} .mp4\n\n<pre>**𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** ➤ {b_name}</pre>\n\n**𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆** ➤ {CR}\n'
+                cc1 = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n𝗣𝗱𝗳 𝗧𝗶𝘁𝗹𝗲 ➤  {name1} {CR} .pdf\n\n<pre><code>**𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** ➤ {b_name}</code></pre>\n\n**𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆** ➤ {CR}\n'
+                cczip = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n𝗭𝗶𝗽 𝗧𝗶𝘁𝗹𝗲 ➤ {name1} {CR} .zip\n\n<pre><code>**𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** ➤ {b_name}</code></pre>\n\n**𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆** ➤ {CR}\n'  
+                ccimg = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n𝗜𝗺𝗮𝗴𝗲 𝗧𝗶𝘁𝗹𝗲 ➤ {name1} {CR} .jpg\n\n<pre><code>**𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** ➤ {b_name}</code></pre>\n\n**𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆** ➤ {CR}\n'
+                cccpvod = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n𝗩𝗶𝗱𝗲𝗼 𝗧𝗶𝘁𝗹𝗲 ➤  {name1} {CR} .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n<pre><code>**𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** ➤ {b_name}</code></pre>\n\n**𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆** ➤ {CR}\n'
+                ccyt = f'[——— ✨ {str(count).zfill(3)} ✨ ———]({link0})\n\n𝗩𝗶𝗱𝗲𝗼 𝗧𝗶𝘁𝗹𝗲 ➤  {name1} {CR} .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>**𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲** ➤ {b_name}</code></pre>\n\n**𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆** ➤ {CR}\n'
                                  
                 if "drive" in url:
                     try:
