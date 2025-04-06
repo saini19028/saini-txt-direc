@@ -693,18 +693,18 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text(f"`✨𝙱𝚊𝚝𝚌𝚑 𝚂𝚞𝚖𝚖𝚊𝚛𝚢✨\n"
+    await m.reply_text(f"**𝙱𝚊𝚝𝚌𝚑 𝚂𝚞𝚖𝚖𝚊𝚛**\n"
+                       f"**▬▬▬▬▬▬▬▬▬▬▬▬▬▬**\n"
+                       f"**🔢𝙸𝚗𝚍𝚎𝚡 𝚁𝚊𝚗𝚐𝚎** ➤ **({raw_text} to {len(links)})**\n"
+                       f"𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲 ➤ **{b_name}**\n"
                        f"▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-                       f"🔢𝙸𝚗𝚍𝚎𝚡 𝚁𝚊𝚗𝚐𝚎 » ({raw_text} to {len(links)})\n"
-                       f"📚𝙱𝚊𝚝𝚌𝚑 𝙽𝚊𝚖𝚎 » {b_name}\n"
+                       f"**𝚃𝚡𝚝 𝚂𝚞𝚖𝚖𝚊𝚛𝚢**➤ **{len(links)}**\n"
                        f"▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-                       f"✨𝚃𝚡𝚝 𝚂𝚞𝚖𝚖𝚊𝚛𝚢✨ : {len(links)}\n"
+                       f"**🔹𝚉𝙸𝙿** ➤ **{zip_count}**  **🔹𝙿𝙳𝙵** ➤ **{pdf_count}**\n"
+                       f"**🔹𝙸𝚖𝚐** ➤ **{img_count}**  🔹𝚅𝚒𝚍𝚎𝚘 ➤ **{video_count}**\n"
                        f"▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-                       f"🔹𝚉𝙸𝙿 » {zip_count}  🔹𝙿𝙳𝙵 » {pdf_count}\n"
-                       f"🔹𝙸𝚖𝚐 » {img_count}  🔹𝚅𝚒𝚍𝚎𝚘 » {video_count}\n"
-                       f"▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-                       f"🔹𝙵𝚊𝚒𝚕𝚎𝚍 𝙻𝚒𝚗𝚔𝚜 » {failed_count}\n"
-                       f"✅𝚂𝚝𝚊𝚝𝚞𝚜 » 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍`")
+                       f"**🔹𝙵𝚊𝚒𝚕𝚎𝚍 𝙻𝚒𝚗𝚔𝚜** » {failed_count}\n"
+                       f"**✅𝚂𝚝𝚊𝚝𝚞𝚜** ➤ **𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍**")
     await m.reply_text("𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ <b> @SAINI_SAHAB19 </b>")
     await m.reply_text("『😏𝗥𝗲𝗮𝗰𝘁𝗶𝗼𝗻 𝗞𝗼𝗻 𝗗𝗲𝗴𝗮😏』")
 
